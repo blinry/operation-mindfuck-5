@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+
+        <title>Operation Mindfuck Vol. 5</title>
+
+        <link rel="stylesheet" href="css/reveal.css" />
+        <link rel="stylesheet" href="css/theme/black.css" />
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css" />
+
+        <style>
+            @keyframes blink {
+                0% {
+                    transform: scale(1.1) rotate(-10deg);
+                    filter: hue-rotate(0);
+                }
+                100% {
+                    transform: scale(0.9) rotate(10deg);
+                    filter: hue-rotate(360deg);
+                }
+            }
+
+            .new {
+                display: inline-block;
+                color: green;
+                text-shadow: 0px 0px 30px red;
+                animation: blink 1s infinite alternate ease-in-out;
+                text-decoration: underline;
+            }
+
+            img {
+                max-height: 13em !important;
+            }
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement("link")
+            link.rel = "stylesheet"
+            link.type = "text/css"
+            link.href = window.location.search.match(/print-pdf/gi)
+                ? "css/print/pdf.css"
+                : "css/print/paper.css"
+            document.getElementsByTagName("head")[0].appendChild(link)
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <section>
+                    <img src="img/puzzle.png" style="height: 8em" />
+                    <h2>Operation Mindfuck <span class="new">Vol. 5</span></h2>
+                    <h4>bleeptrack &amp; blinry</h4>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Topic</h2>
+                    </section>
+                    <section>Content</section>
+                </section>
+
+                <section>
+                    <section>
+                    <h2>More?</h2>
+                    <p>
+                        <a href="https://blinry.org/operation-mindfuck-5/"
+                            >blinry.org/operation-mindfuck-5/</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://blinry.org/operation-mindfuck-4/"
+                            >blinry.org/operation-mindfuck-4/</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://blinry.org/operation-mindfuck-3/"
+                            >blinry.org/operation-mindfuck-3/</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://blinry.org/operation-mindfuck-2/"
+                            >blinry.org/operation-mindfuck-2/</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://blinry.org/operation-mindfuck/"
+                            >blinry.org/operation-mindfuck/</a
+                        >
+                    </p>
+                </section>
+                <section>
+                    <h2>Support us!</h2>
+                    <img src="img/bleeptrack.png" style="height: 7em; margin-right: 2em;" />
+                    <img src="img/blinry.png" style="height: 7em" />
+                    <p>
+                        <a href="https://patreon.com/bleeptrack" style="margin-right: 2em;"
+                            >patreon.com/bleeptrack</a
+                        >
+                        <a href="https://patreon.com/blinry" style="margin-right: 2em;"
+                            >patreon.com/blinry</a
+                        >
+                    </p>
+                </section>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    {src: "plugin/markdown/marked.js"},
+                    {src: "plugin/markdown/markdown.js"},
+                    {src: "plugin/notes/notes.js", async: true},
+                    {
+                        src: "plugin/highlight/highlight.js",
+                        async: true,
+                        callback: function () {
+                            hljs.initHighlightingOnLoad()
+                        },
+                    },
+                ],
+            })
+        </script>
+    </body>
+</html>
